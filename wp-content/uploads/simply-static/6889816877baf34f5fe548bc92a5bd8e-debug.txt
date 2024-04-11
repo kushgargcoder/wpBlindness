@@ -1,0 +1,992 @@
+[2024-04-11 06:41:53] [class-ss-archive-creation-job.php:83] Starting a job; no job is presently running
+[2024-04-11 06:41:53] [class-ss-archive-creation-job.php:84] Here's our task list: setup, fetch_urls, create_zip_archive, wrapup
+[2024-04-11 06:41:53] [class-ss-archive-creation-job.php:98] Pushing first task to queue: setup
+[2024-04-11 06:41:54] [class-ss-archive-creation-job.php:132] Current task: setup
+[2024-04-11 06:41:54] [class-ss-archive-creation-job.php:149] Performing task: setup
+[2024-04-11 06:41:54] [class-ss-task.php:44] Status message: [setup] Setting up
+[2024-04-11 06:41:54] [class-ss-setup-task.php:33] Creating archive directory: /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/
+[2024-04-11 06:41:54] [class-ss-setup-task.php:79] Adding origin URL to queue: http://localhost:81/wp_pat/
+[2024-04-11 06:41:54] [class-ss-setup-task.php:137] File /opt/lampp/htdocs/wp_pat/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js exists; adding to queue as: http://localhost:81/wp_pat/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-04-11 06:41:54] [class-ss-archive-creation-job.php:171] We've found our next task: fetch_urls
+[2024-04-11 06:41:54] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-04-11 06:41:54] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:55] Total pages: 2; Pages remaining: 2
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 2
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632074ff-n4lLkq.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/?simply_static_page=1
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/?simply_static_page=1
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 250555 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: index.html
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632074ff-n4lLkq.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/index.html
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 29 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 2
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863252912-uqIs0x.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js?simply_static_page=2
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js?simply_static_page=2
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 2240 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863252912-uqIs0x.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 2 pages/files
+[2024-04-11 06:41:54] [class-ss-archive-creation-job.php:177] We're not done with the fetch_urls task yet
+[2024-04-11 06:41:54] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-04-11 06:41:54] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:55] Total pages: 30; Pages remaining: 28
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/uploads/2024/04/blindness_logo_1.png
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:28; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632541fb-BBYKyv.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/uploads/2024/04/blindness_logo_1.png?simply_static_page=3
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/uploads/2024/04/blindness_logo_1.png?simply_static_page=3
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 104245 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/png
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/uploads/2024/04/blindness_logo_1.png
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632541fb-BBYKyv.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/uploads/2024/04/blindness_logo_1.png
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/feed/
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:27; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632551bc-rwd0Hm.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/index.php/feed/?simply_static_page=4
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/index.php/feed/?simply_static_page=4
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 1727 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: index.php/feed/index.xml
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632551bc-rwd0Hm.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/index.php/feed/index.xml
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 4 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/comments/feed/
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:26; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863281005-Sj9Ki2.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/index.php/comments/feed/?simply_static_page=5
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/index.php/comments/feed/?simply_static_page=5
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 1682 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: index.php/comments/feed/index.xml
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863281005-Sj9Ki2.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/index.php/comments/feed/index.xml
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 3 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-includes/css/dist/block-library/style.min.css
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:25; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632ac3b2-eSdLhe.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-includes/css/dist/block-library/style.min.css?simply_static_page=6
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-includes/css/dist/block-library/style.min.css?simply_static_page=6
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 113381 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/css/dist/block-library/style.min.css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632ac3b2-eSdLhe.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-includes/css/dist/block-library/style.min.css
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/contact-form-7/includes/css/styles.css
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:24; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632ae63f-fsBma5.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/contact-form-7/includes/css/styles.css?simply_static_page=7
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/contact-form-7/includes/css/styles.css?simply_static_page=7
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 2894 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/contact-form-7/includes/css/styles.css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632ae63f-fsBma5.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/contact-form-7/includes/css/styles.css
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/css/uacf7-frontend.css
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:23; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632af581-KtdCkv.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/css/uacf7-frontend.css?simply_static_page=8
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/css/uacf7-frontend.css?simply_static_page=8
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 72 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/css/uacf7-frontend.css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632af581-KtdCkv.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/css/uacf7-frontend.css
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/css/multistep.css
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:22; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632b0fe8-H88Wz7.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/css/multistep.css?simply_static_page=9
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/css/multistep.css?simply_static_page=9
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 5461 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/css/multistep.css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632b0fe8-H88Wz7.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/css/multistep.css
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/css/font-awesome.min.css
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:21; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632b2150-ECSUpR.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/css/font-awesome.min.css?simply_static_page=10
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/css/font-awesome.min.css?simply_static_page=10
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 31000 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/css/font-awesome.min.css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632b2150-ECSUpR.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/css/font-awesome.min.css
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 5 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/css/all.min.css
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:20; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632b5d0f-57uVaS.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/css/all.min.css?simply_static_page=11
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/css/all.min.css?simply_static_page=11
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 59305 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/css/all.min.css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632b5d0f-57uVaS.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/css/all.min.css
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 15 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/css/all.min.css
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632bcfb0-t96xJ1.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/css/all.min.css?simply_static_page=12
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/css/all.min.css?simply_static_page=12
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 102641 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/css/all.min.css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632bcfb0-t96xJ1.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/css/all.min.css
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 8 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.css
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632c22a1-eKIVgJ.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.css?simply_static_page=13
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.css?simply_static_page=13
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 138761 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632c22a1-eKIVgJ.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.css
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 5 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/themes/blindness/style.css
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632c62ef-gnrMz6.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/themes/blindness/style.css?simply_static_page=14
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/themes/blindness/style.css?simply_static_page=14
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 11954 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/blindness/style.css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632c62ef-gnrMz6.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/themes/blindness/style.css
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 3 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/css/jvcf7_client.css
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632c8c32-1AFKaI.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/css/jvcf7_client.css?simply_static_page=15
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/css/jvcf7_client.css?simply_static_page=15
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 303 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/css/jvcf7_client.css
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632c8c32-1AFKaI.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/css/jvcf7_client.css
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/wp-json/
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost:81/wp_pat/index.php/wp-json/
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/wp-json/wp/v2/pages/7
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost:81/wp_pat/index.php/wp-json/wp/v2/pages/7
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/xmlrpc.php
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost:81/wp_pat/xmlrpc.php
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/wp-json/oembed/1.0/embed
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost:81/wp_pat/index.php/wp-json/oembed/1.0/embed
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-includes/js/jquery/jquery.min.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632cb480-J4PjjL.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-includes/js/jquery/jquery.min.js?simply_static_page=20
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-includes/js/jquery/jquery.min.js?simply_static_page=20
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 87553 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/js/jquery/jquery.min.js
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632cb480-J4PjjL.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-includes/js/jquery/jquery.min.js
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-includes/js/jquery/jquery-migrate.min.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632ccb4f-lv2GYd.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-includes/js/jquery/jquery-migrate.min.js?simply_static_page=21
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-includes/js/jquery/jquery-migrate.min.js?simply_static_page=21
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 13577 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/js/jquery/jquery-migrate.min.js
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632ccb4f-lv2GYd.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-includes/js/jquery/jquery-migrate.min.js
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/cf7-redirect-thank-you-page/includes/../assets/js/redirect_method.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632cdee9-hWoaS5.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/cf7-redirect-thank-you-page/includes/../assets/js/redirect_method.js?simply_static_page=22
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/cf7-redirect-thank-you-page/includes/../assets/js/redirect_method.js?simply_static_page=22
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 3176 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:229] Unable to create temporary directory: /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/cf7-redirect-thank-you-page/includes/../assets/js/
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/contact-form-7/includes/swv/js/index.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632cee22-5Huo3R.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/contact-form-7/includes/swv/js/index.js?simply_static_page=23
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/contact-form-7/includes/swv/js/index.js?simply_static_page=23
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 11513 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/contact-form-7/includes/swv/js/index.js
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632cee22-5Huo3R.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/contact-form-7/includes/swv/js/index.js
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/contact-form-7/includes/js/index.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632cfe25-fz5KSb.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/contact-form-7/includes/js/index.js?simply_static_page=24
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/contact-form-7/includes/js/index.js?simply_static_page=24
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 13054 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/contact-form-7/includes/js/index.js
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632cfe25-fz5KSb.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/contact-form-7/includes/js/index.js
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/redirection/js/redirect.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632d15e7-bESdNS.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/redirection/js/redirect.js?simply_static_page=25
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/redirection/js/redirect.js?simply_static_page=25
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 2319 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/addons/redirection/js/redirect.js
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632d15e7-bESdNS.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/redirection/js/redirect.js
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/js/multistep.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632d2507-7xa4kC.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/js/multistep.js?simply_static_page=26
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/js/multistep.js?simply_static_page=26
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 11154 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/js/multistep.js
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632d2507-7xa4kC.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/js/multistep.js
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/js/progressbar.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632d33da-EXljeG.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/js/progressbar.js?simply_static_page=27
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/js/progressbar.js?simply_static_page=27
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 3886 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/js/progressbar.js
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632d33da-EXljeG.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/addons/multistep/assets/js/progressbar.js
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/themes/blindness/js/navigation.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632d4454-CrFeYJ.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/themes/blindness/js/navigation.js?simply_static_page=28
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/themes/blindness/js/navigation.js?simply_static_page=28
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 2980 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/blindness/js/navigation.js
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632d4454-CrFeYJ.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/themes/blindness/js/navigation.js
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jquery.validate.min.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632d5bb2-B3d2dT.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jquery.validate.min.js?simply_static_page=29
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jquery.validate.min.js?simply_static_page=29
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 27492 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jquery.validate.min.js
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632d5bb2-B3d2dT.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jquery.validate.min.js
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jvcf7_validation.js
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 30
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632d6bd9-nM18iv.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jvcf7_validation.js?simply_static_page=30
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jvcf7_validation.js?simply_static_page=30
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 1950 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jvcf7_validation.js
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632d6bd9-nM18iv.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/jquery-validation-for-contact-form-7/includes/assets/js/jvcf7_validation.js
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:54] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 2 of 30 pages/files
+[2024-04-11 06:41:54] [class-ss-archive-creation-job.php:177] We're not done with the fetch_urls task yet
+[2024-04-11 06:41:54] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-04-11 06:41:54] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:55] Total pages: 69; Pages remaining: 39
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:39; Total: 69
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632d881a-SA4DYu.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat?simply_static_page=31
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat?simply_static_page=31
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:103] Filesize: 257 bytes
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=iso-8859-1
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:190] redirect_url: http://localhost:81/wp_pat/
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:199] This is a redirect to a trailing slashed version of the same page; adding new URL to the queue
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/2024/03/19/hello-world/
+[2024-04-11 06:41:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:38; Total: 69
+[2024-04-11 06:41:54] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178632da243-rEy3YV.tmp
+[2024-04-11 06:41:54] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/index.php/2024/03/19/hello-world/?simply_static_page=32
+[2024-04-11 06:41:54] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/index.php/2024/03/19/hello-world/?simply_static_page=32
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 27667 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: index.php/2024/03/19/hello-world/index.html
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178632da243-rEy3YV.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/index.php/2024/03/19/hello-world/index.html
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 34 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/2024/03/19/hello-world/feed/
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:37; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786331b2c5-jp052t.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/index.php/2024/03/19/hello-world/feed/?simply_static_page=33
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/index.php/2024/03/19/hello-world/feed/?simply_static_page=33
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 1714 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: index.php/2024/03/19/hello-world/feed/index.xml
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786331b2c5-jp052t.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/index.php/2024/03/19/hello-world/feed/index.xml
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 2 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.eot
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:36; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863345e47-0CglyY.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.eot?simply_static_page=34
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.eot?simply_static_page=34
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 165742 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.eot
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863345e47-0CglyY.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.eot
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.woff2
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:35; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863347884-l425uI.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.woff2?simply_static_page=35
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.woff2?simply_static_page=35
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 77160 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.woff2
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863347884-l425uI.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.woff2
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.woff
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:34; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178633489a1-SYStAi.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.woff?simply_static_page=36
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.woff?simply_static_page=36
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 98024 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.woff
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178633489a1-SYStAi.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.woff
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.ttf
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:33; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863349acf-pHzJuJ.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.ttf?simply_static_page=37
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.ttf?simply_static_page=37
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 165548 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.ttf
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863349acf-pHzJuJ.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.ttf
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.svg
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:32; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786334b265-ImucZf.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.svg?simply_static_page=38
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.svg?simply_static_page=38
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 444379 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.svg
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786334b265-ImucZf.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome4/fonts/fontawesome-webfont.svg
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.eot
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:31; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786334d5c6-UlFl70.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.eot?simply_static_page=39
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.eot?simply_static_page=39
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 134294 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.eot
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786334d5c6-UlFl70.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.eot
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.woff2
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:30; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786334f16c-YWgFnD.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.woff2?simply_static_page=40
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.woff2?simply_static_page=40
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 76736 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.woff2
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786334f16c-YWgFnD.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.woff2
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.woff
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:29; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863350294-k8cU1W.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.woff?simply_static_page=41
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.woff?simply_static_page=41
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 89988 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.woff
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863350294-k8cU1W.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.woff
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.ttf
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:28; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786335127a-IVoEaM.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.ttf?simply_static_page=42
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.ttf?simply_static_page=42
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 133988 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.ttf
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786335127a-IVoEaM.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.ttf
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.svg
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:27; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863352a8d-85YXmq.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.svg?simply_static_page=43
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.svg?simply_static_page=43
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 747927 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.svg
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863352a8d-85YXmq.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-brands-400.svg
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.eot
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:26; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863355bec-jGDk4M.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.eot?simply_static_page=44
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.eot?simply_static_page=44
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 34034 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.eot
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863355bec-jGDk4M.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.eot
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.woff2
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:25; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178633571dc-kNQaKf.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.woff2?simply_static_page=45
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.woff2?simply_static_page=45
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 13224 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.woff2
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178633571dc-kNQaKf.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.woff2
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.woff
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:24; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178633580cd-kkD8ID.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.woff?simply_static_page=46
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.woff?simply_static_page=46
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 16276 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.woff
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178633580cd-kkD8ID.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.woff
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.ttf
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:23; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863358f83-XNRMv0.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.ttf?simply_static_page=47
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.ttf?simply_static_page=47
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 33736 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.ttf
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863358f83-XNRMv0.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.ttf
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.svg
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:22; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863359fea-etcL6x.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.svg?simply_static_page=48
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.svg?simply_static_page=48
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 144714 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.svg
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863359fea-etcL6x.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-regular-400.svg
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.eot
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:21; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786335b9d4-j9e3vK.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.eot?simply_static_page=49
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.eot?simply_static_page=49
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 203030 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.eot
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786335b9d4-j9e3vK.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.eot
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.woff2
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:20; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786335cc8b-VIaCY9.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.woff2?simply_static_page=50
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.woff2?simply_static_page=50
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 78268 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.woff2
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786335cc8b-VIaCY9.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.woff2
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.woff
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786335dcbb-DRD4g5.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.woff?simply_static_page=51
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.woff?simply_static_page=51
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 101648 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.woff
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786335dcbb-DRD4g5.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.woff
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.ttf
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786335f56f-MFN2Lf.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.ttf?simply_static_page=52
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.ttf?simply_static_page=52
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 202744 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.ttf
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786335f56f-MFN2Lf.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.ttf
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.svg
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863360b6a-eKVR60.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.svg?simply_static_page=53
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.svg?simply_static_page=53
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 918991 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.svg
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863360b6a-eKVR60.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome5/webfonts/fa-solid-900.svg
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-brands-400.woff2
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178633642ea-5UVcj2.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-brands-400.woff2?simply_static_page=54
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-brands-400.woff2?simply_static_page=54
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 117372 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-brands-400.woff2
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178633642ea-5UVcj2.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-brands-400.woff2
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-brands-400.ttf
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863365625-6OCRc3.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-brands-400.ttf?simply_static_page=55
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-brands-400.ttf?simply_static_page=55
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 207972 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-brands-400.ttf
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863365625-6OCRc3.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-brands-400.ttf
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-regular-400.woff2
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863366e3e-dRWdHV.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-regular-400.woff2?simply_static_page=56
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-regular-400.woff2?simply_static_page=56
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 25452 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-regular-400.woff2
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863366e3e-dRWdHV.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-regular-400.woff2
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-regular-400.ttf
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863367e99-AUED0D.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-regular-400.ttf?simply_static_page=57
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-regular-400.ttf?simply_static_page=57
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 68004 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-regular-400.ttf
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863367e99-AUED0D.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-regular-400.ttf
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-solid-900.woff2
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863368e6e-XYbetu.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-solid-900.woff2?simply_static_page=58
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-solid-900.woff2?simply_static_page=58
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 156496 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-solid-900.woff2
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863368e6e-XYbetu.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-solid-900.woff2
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-solid-900.ttf
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786336a112-tvgNX5.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-solid-900.ttf?simply_static_page=59
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-solid-900.ttf?simply_static_page=59
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 419720 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-solid-900.ttf
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786336a112-tvgNX5.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-solid-900.ttf
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-v4compatibility.woff2
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786336bd70-yIuYqf.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-v4compatibility.woff2?simply_static_page=60
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-v4compatibility.woff2?simply_static_page=60
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 4792 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-v4compatibility.woff2
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786336bd70-yIuYqf.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-v4compatibility.woff2
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-v4compatibility.ttf
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786336cb05-kAt9R4.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-v4compatibility.ttf?simply_static_page=61
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-v4compatibility.ttf?simply_static_page=61
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 10832 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-v4compatibility.ttf
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786336cb05-kAt9R4.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/font-awesome/fontawesome6/webfonts/fa-v4compatibility.ttf
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.eot
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786336d878-AIENpj.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.eot?simply_static_page=62
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.eot?simply_static_page=62
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 525744 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.eot
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786336d878-AIENpj.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.eot
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.woff2
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786336f886-5sbbbe.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.woff2?simply_static_page=63
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.woff2?simply_static_page=63
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 163200 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.woff2
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786336f886-5sbbbe.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.woff2
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.woff
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863370a56-w0m9xg.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.woff?simply_static_page=64
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.woff?simply_static_page=64
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 224116 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.woff
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863370a56-w0m9xg.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.woff
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.ttf
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863371d17-gd6EsM.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.ttf?simply_static_page=65
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.ttf?simply_static_page=65
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 525572 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: 
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.ttf
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863371d17-gd6EsM.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.ttf
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.svg
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863373bfe-BVYOqS.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.svg?simply_static_page=66
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.svg?simply_static_page=66
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 2460531 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.svg
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863373bfe-BVYOqS.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-content/plugins/ultimate-addons-for-contact-form-7/assets/admin/libs/remixicon/remixicon.svg
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/themes/blindness/img/header-shape.png
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786337c1fa-PaJCc4.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/themes/blindness/img/header-shape.png?simply_static_page=67
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/themes/blindness/img/header-shape.png?simply_static_page=67
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 23076 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178633a773d-ffohjh.tmp
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/themes/blindness/img/header-shape.png
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:103] Filesize: 23076 bytes
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/themes/blindness/img/donate-top-shape.png
+[2024-04-11 06:41:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 69
+[2024-04-11 06:41:55] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178633d20a1-gqVTzT.tmp
+[2024-04-11 06:41:55] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/themes/blindness/img/donate-top-shape.png?simply_static_page=68
+[2024-04-11 06:41:55] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/themes/blindness/img/donate-top-shape.png?simply_static_page=68
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:103] Filesize: 23076 bytes
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863408f40-FvgwcU.tmp
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/themes/blindness/img/donate-top-shape.png
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:103] Filesize: 23076 bytes
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-content/themes/blindness/img/donate-bottom-shape.png
+[2024-04-11 06:41:56] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 69
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863435f76-uL3YRz.tmp
+[2024-04-11 06:41:56] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-content/themes/blindness/img/donate-bottom-shape.png?simply_static_page=69
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/themes/blindness/img/donate-bottom-shape.png?simply_static_page=69
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:103] Filesize: 23076 bytes
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178634625e4-GaImSv.tmp
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-content/themes/blindness/img/donate-bottom-shape.png
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:103] Filesize: 23076 bytes
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:119] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-04-11 06:41:56] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 30 of 69 pages/files
+[2024-04-11 06:41:56] [class-ss-archive-creation-job.php:177] We're not done with the fetch_urls task yet
+[2024-04-11 06:41:56] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-04-11 06:41:56] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:55] Total pages: 73; Pages remaining: 4
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/author/admin/
+[2024-04-11 06:41:56] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 73
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/661786348b916-qgx0if.tmp
+[2024-04-11 06:41:56] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/index.php/author/admin/?simply_static_page=70
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/index.php/author/admin/?simply_static_page=70
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:103] Filesize: 22785 bytes
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:233] New filename for static page: index.php/author/admin/index.html
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/661786348b916-qgx0if.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/index.php/author/admin/index.html
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:144] Adding 32 URLs to the queue
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/category/uncategorized/
+[2024-04-11 06:41:56] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 73
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178634bb48d-nhUagx.tmp
+[2024-04-11 06:41:56] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/index.php/category/uncategorized/?simply_static_page=71
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/index.php/category/uncategorized/?simply_static_page=71
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:103] Filesize: 22830 bytes
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:233] New filename for static page: index.php/category/uncategorized/index.html
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178634bb48d-nhUagx.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/index.php/category/uncategorized/index.html
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:144] Adding 32 URLs to the queue
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/wp-json/wp/v2/posts/1
+[2024-04-11 06:41:56] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 73
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost:81/wp_pat/index.php/wp-json/wp/v2/posts/1
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/wp-includes/js/comment-reply.min.js
+[2024-04-11 06:41:56] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 73
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178634ec440-bn0w4y.tmp
+[2024-04-11 06:41:56] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/wp-includes/js/comment-reply.min.js?simply_static_page=73
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/wp-includes/js/comment-reply.min.js?simply_static_page=73
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:103] Filesize: 2981 bytes
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-javascript
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/js/comment-reply.min.js
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178634ec440-bn0w4y.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/wp-includes/js/comment-reply.min.js
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:56] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 69 of 73 pages/files
+[2024-04-11 06:41:56] [class-ss-archive-creation-job.php:177] We're not done with the fetch_urls task yet
+[2024-04-11 06:41:56] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-04-11 06:41:56] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:55] Total pages: 77; Pages remaining: 4
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/author/admin/feed/
+[2024-04-11 06:41:56] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 77
+[2024-04-11 06:41:56] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/66178634edd59-gGn6OW.tmp
+[2024-04-11 06:41:56] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/index.php/author/admin/feed/?simply_static_page=74
+[2024-04-11 06:41:56] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/index.php/author/admin/feed/?simply_static_page=74
+[2024-04-11 06:41:57] [class-ss-url-fetcher.php:103] Filesize: 1755 bytes
+[2024-04-11 06:41:57] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-04-11 06:41:57] [class-ss-url-fetcher.php:233] New filename for static page: index.php/author/admin/feed/index.xml
+[2024-04-11 06:41:57] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/66178634edd59-gGn6OW.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/index.php/author/admin/feed/index.xml
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:144] Adding 4 URLs to the queue
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/wp-json/wp/v2/users/1
+[2024-04-11 06:41:57] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 77
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost:81/wp_pat/index.php/wp-json/wp/v2/users/1
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/category/uncategorized/feed/
+[2024-04-11 06:41:57] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 77
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-11 06:41:57] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/6617863524075-8U3CwN.tmp
+[2024-04-11 06:41:57] [class-ss-page-handler.php:38] URL Prepared:http://localhost:81/wp_pat/index.php/category/uncategorized/feed/?simply_static_page=76
+[2024-04-11 06:41:57] [class-ss-url-fetcher.php:251] Fetching URL: http://localhost:81/wp_pat/index.php/category/uncategorized/feed/?simply_static_page=76
+[2024-04-11 06:41:57] [class-ss-url-fetcher.php:103] Filesize: 1773 bytes
+[2024-04-11 06:41:57] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/rss+xml; charset=UTF-8
+[2024-04-11 06:41:57] [class-ss-url-fetcher.php:233] New filename for static page: index.php/category/uncategorized/feed/index.xml
+[2024-04-11 06:41:57] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/6617863524075-8U3CwN.tmp to /opt/lampp/htdocs/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713/index.php/category/uncategorized/feed/index.xml
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:144] Adding 4 URLs to the queue
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:58] URL: http://localhost:81/wp_pat/index.php/wp-json/wp/v2/categories/1
+[2024-04-11 06:41:57] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 77
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:65] Excludable found: URL: http://localhost:81/wp_pat/index.php/wp-json/wp/v2/categories/1
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-04-11 06:41:57] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 73 of 77 pages/files
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:177] We're not done with the fetch_urls task yet
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-04-11 06:41:57] [class-ss-fetch-urls-task.php:55] Total pages: 77; Pages remaining: 0
+[2024-04-11 06:41:57] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 77 of 77 pages/files
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:171] We've found our next task: create_zip_archive
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:132] Current task: create_zip_archive
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:149] Performing task: create_zip_archive
+[2024-04-11 06:41:57] [class-ss-create-zip-archive.php:71] Fetching list of files to include in zip
+[2024-04-11 06:41:57] [class-ss-create-zip-archive.php:80] Creating zip archive
+[2024-04-11 06:41:57] [class-ss-task.php:44] Status message: [create_zip_archive] ZIP archive created:  <a href="http://localhost:81/wp_pat/wp-content/uploads/simply-static/temp-files/simply-static-1-1712817713.zip">Click here to download</a>
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:171] We've found our next task: wrapup
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:132] Current task: wrapup
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:149] Performing task: wrapup
+[2024-04-11 06:41:57] [class-ss-wrapup-task.php:22] Deleting temporary files
+[2024-04-11 06:41:57] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:166] This task is done and there are no more tasks, time to complete the job
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:193] Completing the job
+[2024-04-11 06:41:57] [class-ss-archive-creation-job.php:320] Status message: [done] Done! Finished in 00:00:04
