@@ -33,7 +33,7 @@
 				<div class="environment-top-strip">
 					<div class="row blind-preven">
 						<div class="logo_wrap col-sm-12" align="center">
-										<a  href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="img-fluid" src="<?php echo esc_url( home_url( '/wp-content/uploads/2024/04/blindness_logo_1.png' ) ); ?>"/></a>
+										<a  href="<?php echo esc_url( home_url( '/' ) ); ?>"><img class="img-fluid" src="<?php echo esc_url( home_url( '/wp-content/uploads/2024/04/header_blind_logo.png' ) ); ?>"/></a>
 						</div>
 					</div>
 				</div>

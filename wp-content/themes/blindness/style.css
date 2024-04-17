@@ -486,10 +486,24 @@ body.home .environment-header-one:before {
 }
 
 .notes-h{
-	height: 330px !important;
+	height: 210px !important;
 }
 
 .col-space{
 	padding-right: 25px;
 	padding-left: 25px;
+}
+
+.complication-surgery{
+	display: flex;
+    flex-wrap: wrap;
+    padding-right: 15px;
+    justify-content: flex-start;
+}
+
+.complication-surgery .wpcf7-list-item{
+	margin-left:0px;
+	margin-top: 12px;
+    margin-bottom: 12px;
+    padding-right: 40px;
 }
